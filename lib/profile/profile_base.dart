@@ -5,7 +5,20 @@ class ProfileBase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-        'This will be the base sample profile - with nice things');
+    return Row(children: [
+      const Text('This will be the base sample profile - with nice things'),
+      circleWidget(context)
+    ]);
+  }
+
+  Widget circleWidget(BuildContext context) {
+    return Container(
+      width: 300.0,
+      height: 300.0,
+      decoration: const BoxDecoration(
+        color: Color.fromARGB(255, 106, 255, 0),
+        shape: BoxShape.circle,
+      ),
+    );
   }
 }
