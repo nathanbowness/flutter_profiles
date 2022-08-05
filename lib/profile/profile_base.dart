@@ -17,7 +17,7 @@ class ProfileBase extends StatelessWidget {
       width: 300.0,
       height: 300.0,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 106, 255, 0),
+        color: Color.fromARGB(255, 238, 10, 79),
         shape: BoxShape.circle,
       ),
     );
@@ -28,7 +28,7 @@ class ProfileBase extends StatelessWidget {
       width: 200,
       height: 200,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 183, 0, 255),
+        color: Color.fromARGB(255, 0, 0, 0),
         shape: BoxShape.rectangle,
       ),
     );
