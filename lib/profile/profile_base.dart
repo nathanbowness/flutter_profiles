@@ -6,7 +6,6 @@ class ProfileBase extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      const Text('This will be the base sample profile - with nice things'),
       circleWidget(context),
       squareWidget(context),
       squareWidget2(context)
@@ -15,13 +14,17 @@ class ProfileBase extends StatelessWidget {
 
   Widget circleWidget(BuildContext context) {
     return Container(
-      width: 300.0,
-      height: 300.0,
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 168, 34, 74),
-        shape: BoxShape.circle,
-      ),
-    );
+        width: 300.0,
+        height: 300.0,
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 168, 34, 74),
+          shape: BoxShape.circle,
+        ),
+        child: const Align(
+          alignment: Alignment.centerLeft,
+          child:
+              Text('This will be the base sample profile - with nice things'),
+        ));
   }
 
   Widget squareWidget(BuildContext context) {
