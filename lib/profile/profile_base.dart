@@ -22,8 +22,7 @@ class ProfileBase extends StatelessWidget {
         ),
         child: const Align(
           alignment: Alignment.centerLeft,
-          child:
-              Text('This will be the base sample profile - with nice things'),
+          child: Text('Sample profiles message'),
         ));
   }
 
