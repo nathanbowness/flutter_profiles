@@ -21,11 +21,14 @@ class ProfileNumbersWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text(value),
+          Text(
+            value,
+            style: TextStyle(fontSize: 20),
+          ),
           const SizedBox(
             height: 2,
           ),
-          Text(text)
+          Text(text, style: TextStyle(fontSize: 16))
         ],
       ),
     );

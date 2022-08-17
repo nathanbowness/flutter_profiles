@@ -27,7 +27,8 @@ class ProfilePageState extends State<ProfilePage> {
           ProfileWidget(imagePath: testUser.imagePath, onClicked: () {}),
           const SizedBox(height: 24),
           buildName(testUser),
-          ProfileNumbersWidget(context),
+          const SizedBox(height: 12),
+          const ProfileNumbersWidget(),
         ],
       ),
     );
