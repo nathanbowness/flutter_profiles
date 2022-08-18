@@ -29,6 +29,9 @@ class ProfilePageState extends State<ProfilePage> {
           buildName(testUser),
           const SizedBox(height: 12),
           const ProfileNumbersWidget(),
+          Center(
+            child: Text(testUser.about),
+          )
         ],
       ),
     );
